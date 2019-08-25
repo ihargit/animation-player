@@ -1,0 +1,41 @@
+.tools-wrapper {
+  list-style: none;
+
+  .tool-icon {
+    float: left;
+    position: relative;
+    background-color: #3a3a3a;
+  }
+
+  .tool-icon.selected::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px solid gold;
+    box-sizing: border-box;
+  }
+
+  .tool-icon:hover {
+    background-color: #444444;
+    cursor: pointer;
+  }
+
+  .icon-tool-paint-bucket {
+    background-image: url("./images/icons.png");
+    background-position: -228px -92px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .icon-tool-pen {
+    background-image: url("./images/icons.png");
+    background-position: -182px -92px;
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.pen-cursor {
+  cursor: url("./images/pen-cursor.png"), auto;
+}
